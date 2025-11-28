@@ -1,0 +1,13 @@
+serve(
+<div class="text-center mx-auto my-8">
+  <h1 class="text-xl font-[title]">@(title)</h1>
+
+  @if (subtitle) {
+    <p class="text-gray-800 font-[paragraph] text-xs mx-auto text-center @(subtitleClass)">
+      @(subtitle)
+    </p>
+  }
+</div>
+
+
+)

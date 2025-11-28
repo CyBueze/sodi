@@ -1,0 +1,44 @@
+
+serve(
+<!-- Image banner -->
+<div class="w-full mt-6 mb-2 px-4 h-40 overflow-hidden rounded-b-4xl">
+  <img
+    src="/images/sodHero.png"
+    alt="Team Photo"
+    class="w-full h-full object-cover object-center rounded-b-4xl"
+  />
+</div>
+
+<!-- First card -->
+<div class="flex flex-col mx-4 my-2 h-24 p-4 rounded-t-4xl bg-teal-600 shadow">
+  <h3 class="text-white text-center font-bold pb-2">
+    Discover Your Purpose
+  </h3>
+  <p class="text-xs text-white text-center">
+    Step into the life you were created for by<br />
+    uncovering your God-given calling and destiny.
+  </p>
+</div>
+
+<!-- Second card -->
+<div class="flex flex-col mx-4 my-2 h-24 p-4 bg-[#2e6b9d] shadow">
+  <h3 class="text-white text-center font-bold pb-2">
+    Develop Your Leadership
+  </h3>
+  <p class="text-xs text-white text-center">
+    Build the character, skills and wisdom needed<br />
+    to lead with excellence, influence and impact.
+  </p>
+</div>
+
+<!-- Third card -->
+<div class="flex flex-col mx-4 my-2 h-24 p-4 rounded-b-4xl bg-[#8e2e9c] shadow">
+  <h3 class="text-white text-center font-bold pb-2">
+    Transform Your World
+  </h3>
+  <p class="text-xs text-white text-center">
+    Become a change agent, empowering others<br />
+    and shaping society through Kingdom principles.
+  </p>
+</div>
+)

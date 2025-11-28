@@ -1,0 +1,14 @@
+as Base import "../layouts/base.zare"
+as Hero import "../components/hero.zare"
+as Intro import "../components/intro.zare"
+as UpcomingEvents import "../components/upcomingEvents.zare"
+as Sermons import "../components/sermons.zare"
+
+serve(
+  <Base>
+    <Hero/>
+    <Intro/>
+    <UpcomingEvents/>
+    <Sermons/>
+  </Base>
+)

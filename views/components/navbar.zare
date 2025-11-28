@@ -1,0 +1,14 @@
+
+serve(
+<div class="flex items-center justify-between py-5 px-8 border-b border-b-gray-200">
+  <div class="flex items-center justify-center gap-2">
+    <img src="/images/sod.jpg" class="w-7 h-7 rounded-full" alt="sod-pogo" />
+    <p class="text-[10px] font-bold leading-tight">
+      SCHOOL OF DESTINY <br />
+      INTERNATIONAL
+    </p>
+  </div>
+  <!-- Hamburger icon -->
+  <img src="/images/menu.svg" class="w-6 h-6" alt="hamburger-icon" />
+</div>
+)

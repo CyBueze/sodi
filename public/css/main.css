@@ -1,0 +1,28 @@
+/* Hide scrollbar for all elements with this class */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@font-face {
+  font-family: 'title';
+  src: url('/fonts/NHDMed.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'paragraph';
+  src: url('/fonts/DMSansReg.ttf') format('truetype');
+}
+
+
+body {
+  font-family: 'paragraph', sans-serif;
+}
+
+[x-cloak] {
+    display: none !important;
+}
+

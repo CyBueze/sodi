@@ -1,0 +1,10 @@
+as Base import "../layouts/base.zare"
+
+serve(
+<Base>
+  <h1 class="font-semibold text-center text-[#4A4A4A] text-2xl"> <span class="text-[#3EADA4]">About</span> Us</h1>
+  <p class="text-xs mt-2 text-center text-[#4A4A4A] w-[260px] mx-auto">At School of Destiny, we train individuals to step into their God-given destinies and become a leader in their spheres of influence.</p>
+</Base>
+
+
+)

@@ -1,0 +1,52 @@
+as Header import "../components/header.zare"
+
+serve(
+  <Header title="Upcoming Events" subtitle="These are the events coming up soon in School of Destiny International!" subtitleClass="max-w-[18rem]" />
+
+<div x-data="{ showModal: false, currentImage: '', currentTitle: '' }">
+  <!-- Flyer Card -->
+  <div class="w-full px-4">
+    <div 
+      class="w-full mt-6 mb-2 px-4 h-48 overflow-hidden rounded-2xl cursor-pointer"
+      @click="showModal = true; currentImage = '/images/event1.jpg'; currentTitle = 'Real Men Conference'"
+    >
+      <img src="/images/event1.jpg" alt="" class="w-full h-full object-cover object-center rounded-2xl"/>
+    </div>
+
+    <div class="w-full px-4 mb-4 mt-4">
+      <div class="w-full max-w-md mx-auto">
+        <a href="#"
+          class="block text-center py-2 px-3 border-[1px] border-black text-xs font-semibold rounded">
+          RSVP for this event
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div x-show="showModal" 
+       x-transition 
+       x-cloak
+       class="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+  >
+    <!-- Modal content -->
+    <div @click.away="showModal = false"
+         class="bg-white rounded-2xl shadow-xl max-w-md w-[90%] p-4 relative">
+
+      <!-- Close button -->
+      <button @click="showModal = false" 
+              class="absolute top-2 right-2 text-xl font-bold text-gray-500 hover:text-black">
+        &times;
+      </button>
+
+      <!-- Title -->
+      <h2 class="text-lg font-semibold mb-4 text-center" x-text="currentTitle"></h2>
+
+      <!-- Full image -->
+      <img :src="currentImage" alt="" class="w-full rounded-xl object-contain max-h-[70vh] mx-auto"/>
+    </div>
+  </div>
+</div>
+
+
+)

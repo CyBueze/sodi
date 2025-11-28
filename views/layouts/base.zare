@@ -1,0 +1,29 @@
+import "https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
+import "https://cdn.jsdelivr.net/npm/basecoat-css@0.3.2/dist/js/all.min.js"
+link "https://cdn.jsdelivr.net/npm/basecoat-css@0.3.2/dist/basecoat.cdn.min.css"
+link "/css/main.css"
+import "/js/htmx.min.js"
+import "https://unpkg.com/alpinejs"
+as Navbar import "../components/navbar.zare"
+as Footer import "../components/footer.zare"
+
+
+serve(
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>School of Destiny</title>
+  </head>
+  <body class="mb-8">
+    <Navbar/>
+    <div class="px-2 pt-8">
+      @(slot)
+    </div>
+    <Footer/>
+  </body>
+  </html>
+
+)

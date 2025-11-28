@@ -1,0 +1,25 @@
+serve(
+<div class="flex flex-col items-center justify-center mb-4">
+  <!-- hero text -->
+  <div class="text-center">
+    <p class="text-3xl font-semibold">
+      Raising Spirit-Led<br />
+      Leaders for Global<br />
+      Influence
+    </p>
+  </div>
+
+  <!-- buttons -->
+  <div class="flex items-center justify-center my-2 gap-2 mx-auto">
+    <a href="#" class="inline-flex items-center py-2 px-5 bg-orange-500 text-white text-xs rounded gap-3 font-[paragraph]">
+      <span>Join us</span>
+      <img src="/images/arrow-45.svg" class="w-3 h-3" alt="arrow" />
+    </a>
+    <a href="#" class="py-2 px-3 border-[0.5px] border-gray-700 text-xs rounded font-[paragraph]">
+      Browse our activities
+    </a>
+  </div>
+</div>
+
+
+)
