@@ -1,9 +1,46 @@
 as Base import "../layouts/base.zare"
+as Header import "../components/header.zare"
+as ScrollRight import "../components/scrollRight.zare"
+as ScrollCard import "../components/scrollCard.zare"
 
 serve(
 <Base>
   <h1 class="font-semibold text-center text-[#4A4A4A] text-2xl"> <span class="text-[#3EADA4]">About</span> Us</h1>
-  <p class="text-xs mt-2 text-center text-[#4A4A4A] w-[260px] mx-auto">At School of Destiny, we train individuals to step into their God-given destinies and become a leader in their spheres of influence.</p>
+  <p class="text-xs my-2 text-center text-[#4A4A4A] w-[260px] mx-auto">At School of Destiny, we train individuals to step into their God-given destinies and become a leader in their spheres of influence.</p>
+  
+  <div class="p-4 rounded-xl">
+    <img src="/images/pptee2.png"
+    alt="Brethren taking pics"
+    class="pb-4"
+  </div>
+  
+  <h2 class="text-xl font-[title] mt-1 text-center mb-1">What is School of Destiny</h2>
+  <p class="text-center text-sm text-[#4A4A4A]">A community for men committed to growth, leadership, and responsibility. We empower men to develop spiritually, mentally, and emotionally while fostering brotherhood and accountability. Our mission is to guide individuals in discovering their purpose, harnessing their God-given potential, and transforming into global changers.</p>
+  
+    <div class="p-4 rounded-xl">
+    <img src="/images/pptee3.png"
+    alt="Pee talking"
+    class="pb-4"
+  </div>
+  
+  <h2 class="text-xl font-[title] mt-1 text-center mb-1">How the vision began</h2>
+  <p class="text-center text-sm text-[#4A4A4A]">A community for men committed to growth, leadership, and responsibility. We empower men to develop spiritually, mentally, and emotionally while fostering brotherhood and accountability. Our mission is to guide individuals in discovering their purpose, harnessing their God-given potential, and transforming into global changers.</p>
+  
+  <ScrollRight>
+    <ScrollCard title="Our Mission">
+     Lorem Ipsum something something
+    </ScrollCard>
+    <ScrollCard title="Our Vision">
+     Vusion slmetging someheidn
+    </ScrollCard>
+    <ScrollCard title="Our Type">
+     Vusion slmetging someheidn
+    </ScrollCard>
+    <ScrollCard title="Our Vision">
+     Vusion slmetging someheidn
+    </ScrollCard>
+  </ScrollRight>
+  
 </Base>
 
 
