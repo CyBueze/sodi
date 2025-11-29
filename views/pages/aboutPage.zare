@@ -1,5 +1,11 @@
 as Base import "../layouts/base.zare"
 as Header import "../components/header.zare"
+as ArmsCard import "../components/armsCard.zare"
+as ScrollRight import "../components/scrollRight.zare"
+as ScrollLeft import "../components/scrollLeft.zare"
+as MAU import "../components/mau.zare"
+
+
 
 serve(
 <Base>
@@ -88,6 +94,79 @@ serve(
     
   </div>
   
+  <!-- Our Ministry Arms -->
+  
+  <h3 class="font-[title] text-xl text-center text-[#3EADA4]">Our Ministry Arms</h3>
+  
+  <div class="flex overflow-x-auto space-x-2 scrollbar-hidden my-4 px-2 items-stretch">
+
+    <!-- Card 1 -->
+    <div class="rounded-xl min-w-[320px] flex flex-col">
+      <img src="/images/pkids.png" alt="" class=" object-cover object-center h-52 w-full rounded-t-xl"/>
+      
+      <div class="bg-[#D8DCE7] rounded-b-xl px-4 py-2 pb-4 flex-1">
+        <p class="font-semibold text-lg mt-1 text-[#2E6B9D]">The Next Generation Project</p>
+        <p class="text-sm mb-2">A ministry focused at building the next generation of leaders starting from today. We are dedicated to molding the minds of children into becoming successful in life and society.</p>
+        <p class="text-sm"><a href="#">Find out more ...</a></p>
+      </div>
+    </div>
+    
+        <!-- Card 2 -->
+    <div class="rounded-xl min-w-[300px] flex flex-col">
+      <img src="/images/phil.png" alt="" class=" object-cover object-center h-52 w-full rounded-t-xl"/>
+      
+      <div class="bg-[#E7E6D8] rounded-b-xl px-4 py-2 pb-4 flex-1">
+        <p class="font-semibold text-lg mt-1 text-[#8F6C13]">The Real Men Nation</p>
+        <p class="text-sm mb-2">A community for growing men into God's intended standard for them.</p>
+        <p class="text-sm"><a href="#">Find out more ...</a></p>
+
+      </div>
+    </div>
+    
+    <ArmsCard
+      src="/images/group3.png"
+      bgHex="var(--gray)"
+      textHex="var(--purple)"
+      caption="The Ideal Women Foundation"
+      text="A community for growing women into God's intended standard for them"
+    />
+    
+  </div>
+  
+  <section class="my-2">
+    <h3 class="font-[title] text-xl text-center text-[#3EADA4]">Our Academies</h3>
+    
+    <ScrollLeft>
+    
+      <ArmsCard
+        src="/images/rel1.png"
+        bgHex="var(--gray)"
+        textHex="var(--blue)"
+        caption="School Of Relationship & Family Life"
+        text="A community for men committed to growth, leadership, and responsibility. We empower men to develop spiritually, mentally, and emotionally while fostering brotherhood and accountability."
+      />
+    
+      <ArmsCard
+        src="/images/phil.png"
+        bgHex="var(--sand)"
+        textHex="var(--gold)"
+        caption="The Real Men Nation"
+        text="A community for growing men into God's intended standard for them"
+      />
+    
+      <ArmsCard
+        src="/images/group3.png"
+        bgHex="var(--gray)"
+        textHex="var(--purple)"
+        caption="The Ideal Women Foundation"
+        text="A community for growing women into God's intended standard for them"
+      />
+    </ScrollLeft>
+  </section>
+
+  <section class="my-2">
+    <MAU/>
+  </section>
   
 </Base>
 

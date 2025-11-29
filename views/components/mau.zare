@@ -1,0 +1,43 @@
+serve(
+  <!--Find out more about us session-->
+<div class="flex flex-col my-8 mx-4 gap-4">
+  <p class="text-center text-2xl font-bold font-[title] leading-[24px]">Find out more about us</p>
+  <!-- Card 1 -->
+  <div class="p-4 rounded-xl bg-[#3EADA4] font-[paragraph]">
+    <img src="/images/frame41.png"
+    alt="Dr Nnanna ministering"
+    class="pb-4"
+    />
+    <div class="flex gap-2 items-center mb-1">
+      <p class="text-white leading-5">Explore Our Academies</p>
+      <a href="" class="border border-white rounded py-[6px] whitespace-nowrap text-xs w-[200px] text-white text-center"> Explore academies</a>
+    </div>
+  </div>
+  
+    <!-- Card 2 -->
+  <div class="p-4 rounded-xl bg-[#8E2E9D] font-[paragraph]">
+    <img src="/images/frame42.png"
+    alt="Brethren taking pics"
+    class="pb-4"
+    />
+    <div class="flex gap-2 items-center mb-1">
+      <p class="text-white leading-5">Upcoming Events</p>
+      <a hx-get="/about" hx-target="body" hx-push-url="true" class="border border-white rounded py-[6px] whitespace-nowrap text-xs w-[200px] text-white text-center">See Upcoming Events</a>
+    </div>
+  </div>
+  
+      <!-- Card 3 -->
+  <div class="p-4 rounded-xl bg-[#2E6B9D] font-[paragraph]">
+    <img src="/images/frame43.png"
+    alt="Brethren taking pics"
+    class="pb-4"
+    />
+    <div class="flex gap-2 items-center mb-1">
+      <p class="text-white leading-5">How to Partner with Us</p>
+      <a href="" class="border border-white rounded py-[6px] whitespace-nowrap text-xs w-[200px] text-white text-center">Find out how</a>
+    </div>
+  </div>
+  
+</div>
+
+)

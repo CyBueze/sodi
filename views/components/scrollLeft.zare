@@ -1,0 +1,5 @@
+serve(
+  <div class="flex flex-row-reverse space-x-2 space-x-reverse overflow-x-auto scrollbar-hidden my-4 px-2 items-stretch">
+    @(slot)
+  </div>
+)

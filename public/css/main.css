@@ -1,3 +1,14 @@
+:root {
+  --gray: #4A4A4A;
+  --teal: #3EADA4;
+  --blue: #2E6B9D;
+  --purple: #8E2E9D;
+  --gold: #8F6C13;
+  --gray: #D8DCE7;
+  --sand: #E7E6D8;
+}
+
+
 /* Hide scrollbar for all elements with this class */
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
