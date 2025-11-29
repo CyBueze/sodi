@@ -1,7 +1,5 @@
 as Base import "../layouts/base.zare"
 as Header import "../components/header.zare"
-as ScrollRight import "../components/scrollRight.zare"
-as ScrollCard import "../components/scrollCard.zare"
 
 serve(
 <Base>
@@ -11,7 +9,7 @@ serve(
   <div class="p-4 rounded-xl">
     <img src="/images/pptee2.png"
     alt="Brethren taking pics"
-    class="pb-4"
+    class="pb-4"/>
   </div>
   
   <h2 class="text-xl font-[title] mt-1 text-center mb-1">What is School of Destiny</h2>
@@ -20,26 +18,76 @@ serve(
     <div class="p-4 rounded-xl">
     <img src="/images/pptee3.png"
     alt="Pee talking"
-    class="pb-4"
+    class="pb-4"/>
   </div>
   
   <h2 class="text-xl font-[title] mt-1 text-center mb-1">How the vision began</h2>
   <p class="text-center text-sm text-[#4A4A4A]">A community for men committed to growth, leadership, and responsibility. We empower men to develop spiritually, mentally, and emotionally while fostering brotherhood and accountability. Our mission is to guide individuals in discovering their purpose, harnessing their God-given potential, and transforming into global changers.</p>
   
-  <ScrollRight>
-    <ScrollCard title="Our Mission">
-     Lorem Ipsum something something
-    </ScrollCard>
-    <ScrollCard title="Our Vision">
-     Vusion slmetging someheidn
-    </ScrollCard>
-    <ScrollCard title="Our Type">
-     Vusion slmetging someheidn
-    </ScrollCard>
-    <ScrollCard title="Our Vision">
-     Vusion slmetging someheidn
-    </ScrollCard>
-  </ScrollRight>
+  <!-- scrollable 1 -->
+  <div class="flex overflow-x-auto space-x-2 scrollbar-hidden my-4">
+    <div class="pt-4 pb-2 px-4 text-center text-white bg-[#2E6B9D] rounded-xl">
+      <p class="mb-1 font-[title]">Our Mission</p>
+      <p class="text-xs w-[250px] mx-auto">Our mission is to guide individuals in discovering their purpose, harnessing their God-given potential, and transforming into global changers.</p>
+    </div>
+    <div class="min-w-[200px]">
+      <img src="/images/pptee2.png" alt="" class="rounded-xl h-36 w-[200px] object-cover object-center"/>
+    </div>
+    
+    <div class="min-w-[200px]">
+      <img src="/images/pptee2.png" alt="" class="rounded-xl h-36 w-[200px] object-cover object-center"/>
+    </div>
+    
+    <div class="min-w-[200px]">
+      <img src="/images/pptee2.png" alt="" class="rounded-xl h-36 w-[200px] object-cover object-center"/>
+    </div>
+    
+  </div>
+  
+    <!-- scrollable 2 (Our Vision) -->
+  <div class="flex overflow-x-auto space-x-2 scrollbar-hidden my-4">
+  
+    <div class="min-w-[200px]">
+      <img src="/images/group1.png" alt="" class="rounded-xl h-36 w-[200px] object-cover object-center"/>
+    </div>
+  
+    <div class="pt-4 pb-2 px-4 text-center text-white bg-[#8E2E9D] rounded-xl">
+      <p class="mb-1 font-[title]">Our Vision</p>
+      <p class="text-xs w-[250px] mx-auto">Our vision is to guide individuals in discovering their purpose, harnessing their God-given potential, and transforming into global changers.</p>
+    </div>
+    
+    <div class="min-w-[200px]">
+      <img src="/images/group2.png" alt="" class="rounded-xl h-36 w-[200px] object-cover object-center"/>
+    </div>
+    
+    <div class="min-w-[200px]">
+      <img src="/images/pptee2.png" alt="" class="rounded-xl h-36 w-[200px] object-cover object-center"/>
+    </div>
+    
+  </div>
+  
+   <!-- scrollable 3 (Our Motto) -->
+  <div class="flex overflow-x-auto space-x-2 scrollbar-hidden my-4">
+  
+    <div class="pt-4 pb-1 px-4 text-center text-white bg-[#3EADA4] rounded-xl">
+      <p class="mb-1 font-[title]">Our Motto</p>
+      <p class="text-xs w-[150px] mx-auto">Raising Leaders.<br/>Releasing<br/> destinies.</p>
+    </div>
+    
+    <div class="min-w-[200px]">
+      <img src="/images/group1.png" alt="" class="rounded-xl h-32 w-[200px] object-cover object-center"/>
+    </div>
+    
+    <div class="min-w-[200px]">
+      <img src="/images/group2.png" alt="" class="rounded-xl h-32 w-[200px] object-cover object-center"/>
+    </div>
+    
+    <div class="min-w-[200px]">
+      <img src="/images/pptee2.png" alt="" class="rounded-xl h-32 w-[200px] object-cover object-center"/>
+    </div>
+    
+  </div>
+  
   
 </Base>
 
