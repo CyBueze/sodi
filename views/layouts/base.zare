@@ -20,7 +20,9 @@ serve(
   <body class="mb-8">
     <Navbar/>
     <div class="px-2 pt-8">
-      @(slot)
+      <div id="content">
+         @(slot)
+      </div>
     </div>
     <Footer/>
   </body>

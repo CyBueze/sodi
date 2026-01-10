@@ -75,7 +75,8 @@ serve(
     />
     <div class="flex gap-2 items-center mb-1">
       <p class="text-white leading-5">About School of Destiny</p>
-      <a hx-get="/about" hx-target="body" hx-push-url="true" class="border border-white rounded py-[6px] whitespace-nowrap text-xs w-[200px] text-white text-center">About us</a>
+      <a href='/about'
+      class="border border-white rounded py-[6px] whitespace-nowrap text-xs w-[200px] text-white text-center">About us</a>
     </div>
   </div>
   
