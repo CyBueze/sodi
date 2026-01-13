@@ -21,8 +21,11 @@ async function bootstrap() {
   // Point directly to source folders in development
   const isDev = process.env.NODE_ENV !== 'production';
   
-  app.useStaticAssets(join(process.cwd(), 'public'));
-  app.setBaseViewsDir(join(process.cwd(), 'views'));  // ✅ Direct to root/views
+ // app.useStaticAssets(join(process.cwd(), 'public'));
+ // app.setBaseViewsDir(join(process.cwd(), 'views'));  // ✅ Direct to root/views
+ app.useStaticAssets(join(__dirname, '..', 'public'));
+  app.setBaseViewsDir(join(__dirname, '..', 'views'));
+
   app.setViewEngine('zare');
   
   await app.listen(process.env.PORT ?? 3000);
