@@ -6,12 +6,12 @@
     "assets": [
       {
         "include": "../views/**/*",
-        "outDir": "dist",
+        "outDir": "dist/views",
         "watchAssets": true
       },
       {
         "include": "../public/**/*",
-        "outDir": "dist",
+        "outDir": "dist/public",
         "watchAssets": true
       }
     ]
